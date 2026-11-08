@@ -1,77 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Font Page</title>
+<title>AKASH — Digital Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <section class="hero">
+<div class="scroll-progress" id="progress"></div>
 
-        <div class="content">
+<div class="background-grid"></div>
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
 
-            <h1>
-                TAMRALIPTA YOUTH COMPUTER CENTRE
-            </h1>
+<header>
+    <a href="#" class="logo">AKASH<span>.</span></a>
 
-            <p class="location">
-                Maniktala More, Tamluk, Purba Medinipur
-            </p>
+    <nav id="nav">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-            <p class="estd">
-                Estd - 2000
-            </p>
+    <a href="#contact" class="header-btn">Let's Talk <span>↗</span></a>
 
-            <p class="govt">
-                Govt. of West Bengal
-            </p>
+    <button class="menu" id="menu">☰</button>
+</header>
 
-            <button onclick="showCourses()">
-                Explore Courses
-            </button>
 
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="availability">
+            <span class="status-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
         </div>
 
-    </section>
+        <p class="intro">HELLO, I'M AKASH</p>
 
-    <section id="courses" class="courses">
+        <h1>
+            Creating<br>
+            <span class="gradient-text">Beyond Limits.</span>
+        </h1>
 
-        <h2>Our Courses</h2>
+        <p class="hero-description">
+            A creative mind exploring the world of technology,
+            digital design and development. Turning curiosity
+            into creativity and ideas into reality.
+        </p>
 
-        <div class="course-grid">
+        <div class="hero-actions">
+            <a href="#projects" class="primary-btn">
+                Explore My Work <span>↗</span>
+            </a>
 
-            <div class="card">
-                <h3>DCA</h3>
-                <p>Diploma In Computer Application</p>
-            </div>
-
-            <div class="card">
-                <h3>ADCA</h3>
-                <p>Advanced Diploma In Computer Application</p>
-            </div>
-
-            <div class="card">
-                <h3>Tally Prime</h3>
-                <p>Accounting & GST Training</p>
-            </div>
-
-            <div class="card">
-                <h3>Graphic Design</h3>
-                <p>Photoshop, Illustrator & Canva</p>
-            </div>
-
+            <a href="#about" class="secondary-btn">
+                More About Me
+            </a>
         </div>
 
-    </section>
+        <div class="hero-meta">
+            <span>BASED IN INDIA</span>
+            <span>DESIGN × TECHNOLOGY × CREATIVITY</span>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
 
+    <div class="hero-visual">
+        <div class="visual-ring ring-one"></div>
+        <div class="visual-ring ring-two"></div>
+        <div class="visual-core">A<span>.</span></div>
+        <div class="floating-tag tag-one">CREATIVE</div>
+        <div class="floating-tag tag-two">TECH EXPLORER</div>
+        <div class="floating-tag tag-three">ALWAYS LEARNING</div>
+    </div>
+
+    <a href="#about" class="scroll-indicator">
+        <span></span> SCROLL TO EXPLORE
+    </a>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+
+    <div class="section-heading">
+        <span>01 / ABOUT</span>
+        <p>A LITTLE ABOUT ME</p>
+    </div>
+
+    <div class="about-content">
+
+        <h2>
+            Curious by nature.<br>
+            <span>Creative by choice.</span>
+        </h2>
+
+        <div class="about-description">
+            <p>
+                I'm passionate about exploring the intersection
+                of creativity and technology.
+            </p>
+
+            <p>
+                From graphic design and media editing to web
+                development, technical troubleshooting and
+                digital research — I enjoy learning new things
+                and building meaningful experiences.
+            </p>
+
+            <p>
+                I believe every skill starts with curiosity
+                and grows through experimentation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERTISE -->
+
+<section class="section expertise" id="expertise">
+
+    <div class="section-heading">
+        <span>02 / EXPERTISE</span>
+        <p>WHAT I DO</p>
+    </div>
+
+    <h2 class="section-title">
+        Skills & <span>Interests.</span>
+    </h2>
+
+    <div class="expertise-grid">
+
+        <div class="expertise-card">
+            <span class="card-number">01</span>
+            <div class="card-icon">✳</div>
+            <h3>Graphic Design</h3>
+            <p>Visual storytelling, creative graphics and branding.</p>
+            <span class="card-arrow">↗</span>
+        </div>
+
+        <div class="expertise-card">
+            <span class="card-number">02</span>
+            <div class="card-icon">⌘</div>
+            <h3>Web Development</h3>
+            <p>Building modern digital experiences with code.</p>
+            <span class="card-arrow">↗</span>
+        </div>
+
+        <div class="expertise-card">
+            <span class="card-number">03</span>
+            <div class="card-icon">◈</div>
+            <h3>Technical Support</h3>
+            <p>Troubleshooting, software and technical solutions.</p>
+            <span class="card-arrow">↗</span>
+        </div>
+
+        <div class="expertise-card">
+            <span class="card-number">04</span>
+            <div class="card-icon">⌕</div>
+            <h3>Digital Research</h3>
+            <p>Open-source research and information discovery.</p>
+            <span class="card-arrow">↗</span>
+        </div>
+
+        <div class="expertise-card">
+            <span class="card-number">05</span>
+            <div class="card-icon">▷</div>
+            <h3>Media Editing</h3>
+            <p>Creative image, video and audio editing.</p>
+            <span class="card-arrow">↗</span>
+        </div>
+
+        <div class="expertise-card">
+            <span class="card-number">06</span>
+            <div class="card-icon">✦</div>
+            <h3>Digital Projects</h3>
+            <p>Building communities and managing creative projects.</p>
+            <span class="card-arrow">↗</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="section projects" id="projects">
+
+    <div class="section-heading">
+        <span>03 / PROJECTS</span>
+        <p>THINGS I'VE BUILT</p>
+    </div>
+
+    <h2 class="section-title">
+        Selected <span>Works.</span>
+    </h2>
+
+    <div class="project-list">
+
+        <a href="#" class="project-item">
+            <div class="project-visual project-one">
+                <span>H</span>
+            </div>
+
+            <div class="project-info">
+                <span>COMMUNITY / GAMING</span>
+                <h3>Herobrine SMP</h3>
+                <p>Minecraft server & community management</p>
+            </div>
+
+            <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="#" class="project-item">
+            <div class="project-visual project-two">
+                <span>A.</span>
+            </div>
+
+            <div class="project-info">
+                <span>CREATIVE / DESIGN</span>
+                <h3>Visual Creations</h3>
+                <p>Digital graphics and creative experiments</p>
+            </div>
+
+            <span class="project-arrow">↗</span>
+        </a>
+
+        <a href="#" class="project-item">
+            <div class="project-visual project-three">
+                <span>&lt;/&gt;</span>
+            </div>
+
+            <div class="project-info">
+                <span>DEVELOPMENT / WEB</span>
+                <h3>Web Experiments</h3>
+                <p>Websites and personal coding projects</p>
+            </div>
+
+            <span class="project-arrow">↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- SOCIAL -->
+
+<section class="section social">
+
+    <div class="section-heading">
+        <span>04 / SOCIALS</span>
+        <p>FIND ME ONLINE</p>
+    </div>
+
+    <div class="social-links">
+
+        <a href="https://www.google.com" target="_blank">
+            <span class="social-name">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </span>
+            <span class="social-arrow">↗</span>
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <span class="social-name">
+                <i class="fa-brands fa-youtube"></i>
+                YouTube
+            </span>
+            <span class="social-arrow">↗</span>
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <span class="social-name">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </span>
+            <span class="social-arrow">↗</span>
+        </a>
+
+        <a href="https://www.google.com" target="_blank">
+            <span class="social-name">
+                <i class="fa-brands fa-linkedin-in"></i>
+                LinkedIn
+            </span>
+            <span class="social-arrow">↗</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+    <div class="contact-inner">
+        <p class="contact-label">GOT AN IDEA?</p>
+        <h2>Let's build something <span>together.</span></h2>
+        <p>Open for creative projects, collaborations and new opportunities.</p>
+        <a href="mailto:youremail@example.com" class="primary-btn">Say Hello <span>↗</span></a>
+    </div>
+</section>
+
+
+<footer>
+    <a href="#" class="logo">AKASH<span>.</span></a>
+
+    <p>DESIGNED & DEVELOPED BY AKASH © 2026</p>
+
+    <a href="#">BACK TO TOP ↑</a>
+</footer>
+
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
 </body>
-
 </html>
